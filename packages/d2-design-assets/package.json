@@ -1,0 +1,29 @@
+{
+  "name": "@d2-framework/d2-design-assets",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/d2-design-assets.umd.cjs",
+  "module": "./dist/d2-design-assets.js",
+  "exports": {
+    ".": {
+      "import": "./dist/d2-design-assets.js",
+      "require": "./dist/d2-design-assets.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:watch": "vite build --watch"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "vite": "^4.3.2"
+  }
+}
